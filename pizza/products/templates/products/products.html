@@ -5,9 +5,189 @@
     <title>Title</title>
 </head>
 <body>
+
+<div class="container pb-5 mb-sm-1">
+    <!-- Categories grid-->
+    <div class="row">
+       {% for product in products %}
+        <div class="col-md-4 col-sm-6">
+            <div class="card border-0 mb-grid-gutter">
+                <a class="card-img-tiles" href="shop-style1-ls.html">
+                    <div class="main-img"><img src="{{ product.image.url }}" alt="Pizza" width="340"  height="326"></div>
+                    <div class="thumblist"><img src="{{ product.image.url }}" alt="Pizza"  width="175"  height="164"><img src="{{ product.image.url }}" alt="Pizza"  width="175"  height="164"></div>
+                </a>
+                <div class="card-body border mt-n1 py-4 text-center">
+                    <h2 class="h5 mb-1">{{ product.name }}</h2><span class="d-block mb-3 font-size-xs text-muted">{{ product.description }} <span class="font-weight-semibold">{{ product.price }}</span><span class="font-weight-semibold">{{ product.category }}</span></span><a class="btn btn-pill btn-outline-primary btn-sm" href="shop-style1-ls.html">Shop clothing</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card border-0 mb-grid-gutter">
+                <a class="card-img-tiles" href="shop-style1-ls.html">
+                    <div class="main-img"><img src="https://via.placeholder.com/340x326/FF7F50/000000" alt="Sunglasses"></div>
+                    <div class="thumblist"><img src="https://via.placeholder.com/175x164/FF7F50/000000" alt="Sunglasses"><img src="https://via.placeholder.com/175x164/FF7F50/000000" alt="Sunglasses"></div>
+                </a>
+                <div class="card-body border mt-n1 py-4 text-center">
+                    <h2 class="h5 mb-1">Sunglasses</h2><span class="d-block mb-3 font-size-xs text-muted">Starting from <span class="font-weight-semibold">$35.99</span></span><a class="btn btn-pill btn-outline-primary btn-sm" href="shop-style1-ls.html">Shop sunglasses</a>
+                </div>
+            </div>
+        </div>
+        <!-- Category-->
+        <div class="col-md-4 col-sm-6">
+            <div class="card border-0 mb-grid-gutter">
+                <a class="card-img-tiles" href="shop-style1-ls.html">
+                    <div class="main-img"><img src="https://via.placeholder.com/340x326/008B8B/000000" alt="Hats"></div>
+                    <div class="thumblist"><img src="https://via.placeholder.com/175x164/008B8B/000000" alt="Hats"><img src="https://via.placeholder.com/175x164/008B8B/000000" alt="Hats"></div>
+                </a>
+                <div class="card-body border mt-n1 py-4 text-center">
+                    <h2 class="h5 mb-1">Hats</h2><span class="d-block mb-3 font-size-xs text-muted">Starting from <span class="font-weight-semibold">$14.50</span></span><a class="btn btn-pill btn-outline-primary btn-sm" href="shop-style1-ls.html">Shop hats</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h1>
     Welcome to greatest pizza
 </h1>
+<table>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Size</th>
+    <th>Image</th>
+</tr>
+
+</table>
+
 <a href="https://www.google.ru/">
     click me!
 </a>
